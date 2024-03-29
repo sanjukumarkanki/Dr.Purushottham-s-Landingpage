@@ -1,0 +1,103 @@
+.getintouch-main-container{
+    background-image: url('../assets/getintouchsmalldevicesBanner.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.56rem 0px;
+}
+
+.getintouch-main-container > img{
+    width: 3.13rem;
+    height: 3.31rem;
+    margin-right: 0.77rem;
+}
+
+
+.getinctouch__text__container > h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.justcall__Text{
+    font-size: 0.63rem;
+    font-weight: 400;
+    margin-top: 0px;
+    color: white;
+}
+
+.getintocuh__phonenumber{
+    font-size: 0.63rem;
+    color: #fff;
+    font-weight: 700; 
+    margin-bottom: 0px;  
+}
+
+.getintocuh__phonenumber > img{
+    width: 0.54rem;
+    height: 0.54rem;
+    margin-right: 0.27rem;
+}
+
+.getintouch__booknow__btn > button{
+    width:3.5rem ;
+    height: 1.092rem;
+    border-radius: 0.15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.63rem;
+    color: var(--brandClr);
+    font-weight: 600;
+    margin-top: 0.40rem;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+
+
+@media screen and (min-width : 768px) {
+    .getintouch-main-container{
+        padding: 0.89rem 3.62rem;
+        height: 4.30rem;
+    }
+    .getintouch-main-container > div{
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .getintouch-main-container > img{
+        width: 2.92rem;
+        height: 2.92rem;
+    }
+
+    .justcall__Text{
+        font-size: 0.62rem;
+    }
+    .getintocuh__phonenumber{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1rem;
+    }
+    .getintocuh__phonenumber > img{
+        width: 0.98rem;
+        height: 0.98rem;   
+    }
+
+    .getintouch__booknow__btn > button{
+        width: 6.83rem;
+        height: 1.15rem;
+        border-radius: 0.15rem;
+        padding: 0.301rem 0.54rem;
+        background-color: var(--brandClr);
+        color: #fff;
+        font-size: 0.62rem;
+    }
+}

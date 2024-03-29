@@ -1,0 +1,47 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    font-family: 'Source Sans 3', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html{
+    font-size: 5.31vw ;
+
+    /* font-size:22px */
+}
+
+:root {
+    --brandClr: #802A8F;
+    --pinkClr: #f0d0dc;
+    --paraClr: #979797;
+    --fontSize53pxMD: 1rem;
+    --fontSize33pxMD: 0.62rem;
+    --fontSize22pxSM: 1rem;
+}
+
+.main-app{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 18.88rem;
+    padding: 20px 0px;
+}
+
+@media screen and (min-width:768px){
+    html {
+        font-size: 2.76vw;
+        /* font-size:53px */
+    }
+
+    .main-app{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100% !important;
+    }
+}
