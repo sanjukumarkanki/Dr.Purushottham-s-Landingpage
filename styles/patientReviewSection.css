@@ -45,7 +45,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0rem;
+    margin-top: 0.3rem;
     padding: 0px 0.2rem;
 }
 
@@ -56,7 +56,7 @@
     color: #000;
 }
 
-.swiper-slide > div > button > img{
+.swiper-slide > div >  button > img{
     width: 0.64rem;
     height: 0.64rem;
     margin-right: 0.25rem;
@@ -160,14 +160,14 @@
         font-size: 0.26rem;
         text-align: start;
     }
-    .swiper-slide > div > button{
+    .swiper-slide > div >  button{
         width: 2.16rem;
         height: 0.54rem;
         font-size: 0.18rem;
     }
     .swiper-slide > div > button > img{
-        width: 0.17rem;
-        height: 0.17rem;
+        width: 0.36rem;
+        height: 0.36rem;
         margin-right: 0.14rem;
     }
     .swiper-button-next-custom{

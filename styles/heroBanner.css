@@ -1,0 +1,165 @@
+.hero-banner-container{
+    width: 100%;
+    height: 19.68rem;
+    background-image: url('assets\HeroBackGroundImage.webp');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.hero-banner-container h1{
+    font-size: 1.59rem;
+    color: var(--brandClr);
+    width: 17.27rem;
+    height: 3.77rem;
+    font-weight: 700;
+    line-height: 1.88rem;
+    text-align: center;
+    margin-top: 0.63rem;
+    margin: 0.63rem 0 0 0.77rem;
+}
+
+.hero-banner-container h2{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0.32rem;
+    line-height: 0.9rem;
+    margin-left: 6.7rem;
+}
+.hero-banner-container h3{
+    font-size: 0.63rem;
+    font-weight: 700;
+    margin-left: 6.7rem;
+    color: var(--brandClr);
+}
+.hero-banner-container p{
+    font-size: 0.62rem;
+    font-weight: 400;
+    margin-left: 6.7rem;
+}
+
+.hero-banner-container img{
+    width: 15.45rem;
+    height: 15.86rem;
+    position: relative;
+    bottom: 4.65rem;
+    right: 1rem;
+}
+
+.hero__banner__image{
+    position: relative;
+    right: 2.38rem;
+}
+
+.years-of-experience-container{
+display: flex;
+flex-direction: column;
+gap: 0.45rem;
+align-items: flex-end;
+position: absolute;
+left: 11.81rem;
+top: 12rem;
+}
+ .years-of-experience-container>div{
+background-color: var(--brandClr); 
+color: white;
+display: flex;
+align-items: center;
+width: 6.95rem;
+height: 2.09rem;
+gap: 0.2rem;
+border-radius: 0.2rem 0 0 0.2rem;
+} 
+
+.years-of-experience-container h1{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 900;
+    margin-left: 0.2rem;
+}
+.years-of-experience-container h2{
+    font-size: 0.63rem;
+    font-weight: 600;
+    margin-left: 0.7rem;
+}
+.years-of-experience-container > div:first-child > h2 {
+margin-left: 0.6rem;
+
+}
+.years-of-experience-container > div:first-child > h1 {
+    margin-left: 0.8rem;
+    }
+.years__of__experience__vertical__line{
+  display: none;
+} 
+
+
+@media screen and (min-width:768px){
+.hero-banner-container{
+    width: 100%;
+    height: 16.03rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-repeat: round;
+}
+
+.hero-banner-container h1{
+    font-size: 1.6rem;
+    width: 17.41rem;
+    height: 3.77rem;
+    margin: 2.96rem 0 0 0;
+text-align: unset;
+}
+
+.hero-banner-container h2{
+    margin-top: 0.96rem;
+    line-height: 0.9rem;
+    margin-left: 0rem;
+}
+.hero-banner-container h3,.hero-banner-container p{
+    margin-left: 0rem;
+}
+
+.hero-banner-container img{
+    width: 15.45rem;
+    height: 15.86rem;
+  position: unset;
+}
+.hero__banner__text{
+    position: relative;
+    left: 4.02rem;
+}
+.years-of-experience-container{
+    width: 24.53rem;
+    height: 3.32rem;
+    background-color: var(--brandClr);
+    color: white;
+    border-radius: 0.19rem;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 5.85rem;
+    position: relative;
+    bottom: 1.6rem;
+    top:unset;
+    left: unset;
+    gap: 0;
+
+}
+.years-of-experience-container h1{
+    font-weight: 700;
+    margin-left: unset;
+}
+.years-of-experience-container h2{
+    text-align: center;
+    margin-left: unset;
+}
+.years__of__experience__vertical__line{
+    border: 1px solid #F0D0DD;height: 2.39rem;
+    display: block;
+}
+.years-of-experience-container>div{
+    display: unset;
+    } 
+
+}

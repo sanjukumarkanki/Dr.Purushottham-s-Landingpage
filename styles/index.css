@@ -7,6 +7,7 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    user-select: none;
 }
 
 html{
@@ -28,8 +29,7 @@ html{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    width: 18.88rem;
-    padding: 20px 0px;
+    width: 100%;
 }
 
 @media screen and (min-width:768px){

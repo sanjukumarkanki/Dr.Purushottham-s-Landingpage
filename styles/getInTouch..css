@@ -20,6 +20,8 @@
     font-weight: 600;
     color: white;
     margin-bottom: 0px;
+    position: relative;
+    top: 0.2rem;
 }
 
 .justcall__Text{
@@ -27,6 +29,7 @@
     font-weight: 400;
     margin-top: 0px;
     color: white;
+    margin-bottom: 0px !important;
 }
 
 .getintocuh__phonenumber{
@@ -42,7 +45,7 @@
     margin-right: 0.27rem;
 }
 
-.getintouch__booknow__btn > button{
+.getintouch__booknow__btn > .btn1{
     width:3.5rem ;
     height: 1.092rem;
     border-radius: 0.15rem;
@@ -59,11 +62,15 @@
     outline: none;
 }
 
+.getintouch__booknow__btn > .btn2{
+    display: none;
+}
+
 
 
 @media screen and (min-width : 768px) {
     .getintouch-main-container{
-        padding: 0.89rem 3.62rem;
+        padding: 0.89rem 2.62rem;
         height: 4.30rem;
     }
     .getintouch-main-container > div{
@@ -91,13 +98,30 @@
         height: 0.98rem;   
     }
 
-    .getintouch__booknow__btn > button{
-        width: 6.83rem;
+
+    .getintouch__booknow__btn > .btn1{
+        display: none !important;
+    }
+
+    .getintouch__booknow__btn > .btn2 {
         height: 1.15rem;
         border-radius: 0.15rem;
         padding: 0.301rem 0.54rem;
         background-color: var(--brandClr);
         color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        margin-left: 1rem;
+        align-items: center;
+    }
+
+    .getintouch__booknow__btn > .btn2 > p{
+        width: 6.39rem;
         font-size: 0.62rem;
+        font-weight: 600;
+        margin-bottom: 0px !important;
     }
 }

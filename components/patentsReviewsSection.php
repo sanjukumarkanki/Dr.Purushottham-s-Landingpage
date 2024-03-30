@@ -22,7 +22,7 @@
                         echo "<img src='" . $row["carouselImageUrl"] . "' alt='Patient Image' />";
                         echo "<div>";
                         echo "<span>" . $row["CarouselText"] . "</span>"; // Assuming reviewText holds the surgery information
-                        echo "<button>";
+                        echo "<button onclick='openVideo(\"" . $row['CarouselVideoLink'] . "\")'>";
                         echo "<img src='assets/playIcon.png' alt='Play Icon' />";
                         echo "<span>Watch Full Video</span>";
                         echo "</button>";
@@ -56,10 +56,12 @@
             breakpoints: {
                 768: {
                     slidesPerView: 3,
-                    spaceBetween: 30,
-                    centeredSlides: false
+                    spaceBetween: 35,
+
                 }
             }
         });
     </script>
+
+
 </div>
