@@ -45,3 +45,6 @@ html{
         width: 100% !important;
     }
 }
+.hide-element{
+    display: none;
+}

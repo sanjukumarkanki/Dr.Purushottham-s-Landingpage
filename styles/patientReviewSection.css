@@ -144,6 +144,7 @@
     }
     .swiper{
         width: 26.9rem !important;
+        z-index: 0 !important;
     }
     .swiper-slide{
         width: 8.30rem !important;
