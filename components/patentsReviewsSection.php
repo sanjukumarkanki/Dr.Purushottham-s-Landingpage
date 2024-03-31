@@ -8,7 +8,7 @@
     <!-- Swiper JS -->
     <div class="swiper-main-container">
         <div class="swiper-button-next-custom">
-            <img src="assets/leftarrow.png" alt="" />
+            <img src="assets\leftarrow.png" alt="" />
         </div>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -28,22 +28,18 @@
                         echo "</button>";
                         echo "</div>";
                         echo "</div>";
-
-                        // Modal for each video
-
                     }
                 } else {
                     echo "No reviews found";
                 }
-                $conn->close();
+
                 ?>
             </div>
         </div>
         <div class="swiper-button-prev-custom">
-            <img src="assets/rightarrow.png" alt="" />
+            <img src="assets\rightarrow.png" alt="" />
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
@@ -66,4 +62,6 @@
             }
         });
     </script>
+
+
 </div>

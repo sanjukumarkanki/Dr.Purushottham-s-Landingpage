@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./styles/heroBanner.css">
     <link rel="stylesheet" href="./styles/DoctorsApproach.css">
     <link rel="stylesheet" href="styles\patientReviewSection.css">
-    <link rel="stylesheet" href="styles\expertiseSection.css">
+    <link rel="stylesheet" href="styles\expertise.css">
     <link rel="stylesheet" href="styles\getInTouch..css">
     <link rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="./javaScript/index.js" defer></script>
@@ -45,29 +45,58 @@
             </div> -->
 
         </div>
-
         <!-- Patient Review Section -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <?php include('components\patentsReviewsSection.php') ?>
-
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script>
+            // When the User Clicks On The Carousel Video Link This function Will get's triggered
             function openVideo(videoUrl) {
-                // Specify the URL you want to open
-                var url = videoUrl; // Change this to your desired URL
+                // Display SweetAlert dialog with iframe content
+                const iframeHtml = `
+                <iframe width="90%" height="200" src="${videoUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <button class="iframe__button" onclick="closeVideo()">Close Video</button>`;
+                Swal.fire({
+                    html: iframeHtml,
+                    width: '95%',
+                    padding: '1rem',
+                    showCloseButton: false,
+                    showConfirmButton: false,
+                    showCloseButton: false,
+                });
+            }
 
-                // Specify window features such as width, height, and other options for the popup window
-                var windowFeatures = 'width=500,height=500,resizable=yes,scrollbars=yes';
 
-                // Open the window with the specified URL and features as a popup window
-                var newWindow = window.open(url, 'VideoPopup', windowFeatures);
+            function closeVideo() {
+                Swal.close(); // Close the SweetAlert dialog
+            }
 
-                // Focus the new window (optional)
-                if (newWindow) {
-                    newWindow.focus();
-                }
+            // When the User Clicks On The epertise Card Section Link This function Will get's triggered
+
+            function displayPopup() {
+                const popupContainer = `
+                            <div class="popup-container">
+                <img src="assets/popupBanner.webp" alt="" />
+                <div class="popup__text__container">
+                    <h3>To Know More About The Doctor</h3>
+                    <form method="POST" action="components/formData.php">
+                        <input name="username" required pattern="[A-Za-z ]{3,}" minlength="3" maxlength="25" title="Please enter at least 3 alphabetic characters" type="text" placeholder="Enter Your Name Here" name="name" />
+                        <input name="userPassword" type="tel" required minlength="10" maxlength="14" title="Minimum 10 Numbers Required" placeholder="Enter Your Phone Number Here" name="phone" />
+                        <button type="submit">Submit</button>
+                        <label >Call us at:</label>
+                    <a href="tel:1800 120 2676"><button type="button">1800 120 2676</button></a>
+                    </form>
+                </div>
+            </div>
+    `;
+                Swal.fire({
+                    html: popupContainer,
+                    padding: '0px',
+                    showCloseButton: true,
+                    showConfirmButton: false,
+                });
             }
         </script>
+
         <?php include('components\getInTouch.php') ?>
 
 
