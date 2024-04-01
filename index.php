@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./styles/heroBanner.css">
     <link rel="stylesheet" href="./styles/DoctorsApproach.css">
     <link rel="stylesheet" href="styles\patientReviewSection.css">
-    <link rel="stylesheet" href="styles\expertise.css">
+    <link rel="stylesheet" href="styles\expertiseSection.css">
     <link rel="stylesheet" href="styles\getInTouch..css">
     <link rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="./javaScript/index.js" defer></script>
@@ -74,7 +74,9 @@
 
             function displayPopup() {
                 const popupContainer = `
-                            <div class="popup-container">
+                <button class="popupbtn1" onclick="closeVideo()"><img src="assets/CancelButtonSmallDevices.webp" alt="cancel-button-icon" /></button>
+                <button class="popupbtn2" onclick="closeVideo()"><img src="assets/Cancel.webp" alt="cancel-button-icon" /></button>
+                <div class="popup-container">
                 <img src="assets/popupBanner.webp" alt="" />
                 <div class="popup__text__container">
                     <h3>To Know More About The Doctor</h3>
@@ -90,8 +92,9 @@
     `;
                 Swal.fire({
                     html: popupContainer,
+                    width: '80%',
                     padding: '0px',
-                    showCloseButton: true,
+                    showCloseButton: false,
                     showConfirmButton: false,
                 });
             }

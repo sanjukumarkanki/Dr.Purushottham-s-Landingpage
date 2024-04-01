@@ -261,8 +261,16 @@ div:where(.swal2-container) div:where(.swal2-popup){
     
 iframe{
     border-radius: 0.5rem;
-    height: 11rem !important;
+    width: 24.11rem !important;
+    height: 13.58rem !important;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+div:where(.swal2-container) div:where(.swal2-popup){
+    background-color: transparent !important;
+    width: 24.11rem;
+    height: 13.58rem !important;
+}
+
     
 }
