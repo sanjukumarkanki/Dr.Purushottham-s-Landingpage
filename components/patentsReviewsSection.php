@@ -18,7 +18,7 @@
                 if ($result->num_rows > 0) {
                     // Output data of each row
                     while ($row = $result->fetch_assoc()) {
-                        echo "<div class='swiper-slide'>";
+                        echo "<div class='swiper-slide' onclick='openVideo(\"" . $row['CarouselVideoLink'] . "\")' >";
                         echo "<img src='" . $row["carouselImageUrl"] . "' alt='Patient Image' />";
                         echo "<div>";
                         echo "<span>" . $row["CarouselText"] . "</span>"; // Assuming reviewText holds the surgery information

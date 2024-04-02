@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles/navBar.css">
     <link rel="stylesheet" href="./styles/heroBanner.css">
     <link rel="stylesheet" href="./styles/DoctorsApproach.css">
-    <link rel="stylesheet" href="styles\patientReviewSection.css">
+    <link rel="stylesheet" href="styles\patientReview.css">
     <link rel="stylesheet" href="styles\expertiseSection.css">
     <link rel="stylesheet" href="styles\getInTouch..css">
     <link rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -90,9 +90,10 @@
                 </div>
             </div>
     `;
+
                 Swal.fire({
                     html: popupContainer,
-                    width: '80%',
+                    width: '100%',
                     padding: '0px',
                     showCloseButton: false,
                     showConfirmButton: false,
@@ -101,9 +102,6 @@
         </script>
 
         <?php include('components\getInTouch.php') ?>
-
-
-
     </div>
 </body>
 
