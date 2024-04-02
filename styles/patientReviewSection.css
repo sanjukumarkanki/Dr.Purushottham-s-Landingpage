@@ -152,7 +152,8 @@
 
 iframe{
     border-radius: 0;
-    height: 6.5rem !important;
+    width: 15.1rem;
+    height: 8.5rem !important;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .iframe__button{
@@ -260,9 +261,8 @@ div:where(.swal2-container) div:where(.swal2-popup){
     }
     
 iframe{
-    border-radius: 0.5rem;
-    width: 10.56rem !important;
-    height: 5.94rem !important;
+    width: 19.5rem !important;
+    height: 11rem !important;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
